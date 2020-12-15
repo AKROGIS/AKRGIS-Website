@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Alaska GIS ArcGIS Server</title>
+<style type="text/css"> 
+	body {background-color:#CCCC99;width:960px;margin:auto;padding-top:20px;}
+	#top {background-color:black;padding:20px;border-style:solid;border-width:2px;border-color:black;}
+	#content {background-color:white;border-style:solid;border-width:2px;border-color:black;padding:20px;}
+	#footer {background-color:black;padding:20px;border-style:solid;border-width:2px;border-color:black;color:white;font-size:0.9em;font-family:Arial,Arial,sans-serif;font-weight:normal;}	
+	h1 {color:white;font-size:2.5em;font-family:Arial,Arial,sans-serif;font-weight:normal;margin:0;}
+	h2 {color:white;font-size:1em;font-family:Arial,Arial,sans-serif;font-weight:normal;font-style:italic;margin:0;}
+	h3 {color:black;font-size:1em;font-family:Arial,Arial,sans-serif;font-weight:bold;}
+	h4 {color:red;font-size:1em;font-family:Arial,Arial,sans-serif;font-weight:bold;}
+	ul {list-style-type:square;font-family:Arial,Arial,sans-serif;}
+	a:link {text-decoration:none;color:#006633;}	
+	a:visited {text-decoration:none;color:#006633;} 
+
+	a:hover {text-decoration:underline;}
+
+	a:active {text-decoration:underline;}
+</style>
+</head>
+
+<body>
+<div id="top">
+  <img style="float:left; padding-right:10px" src="nps_ak.png">
+  <h1>Alaska Regional Office GIS Team</h1>
+  <h2>Web mapping server (akrgis.nps.gov)</h2>
+  <br>	
+</div>
+<div id="content">
+	<br/>
+	<h3>Web Maps:</h3>
+	<ul>
+		<li>Park Atlas Maps:
+			<ul>
+				<li><a href="http://inpniscvfemp29.nps.doi.net/Html5Viewer/Index.html?configBase=http://inpniscvfemp29.nps.doi.net/Geocortex/Essentials/REST/sites/BELA_Park_Atlas/viewers/BELA/virtualdirectory/Resources/Config/Default">Bering Land Bridge National Preserve</a></li>
+				<li><a href="http://inpniscvfemp29.nps.doi.net/Html5Viewer/Index.html?configBase=http://inpniscvfemp29.nps.doi.net/Geocortex/Essentials/REST/sites/DENA_Park_Atlas/viewers/DENA1/virtualdirectory/Resources/Config/Default">Denali National Park and Preserve</a></li>
+				<li><a href="http://inpniscvfemp29.nps.doi.net/Html5Viewer/Index.html?configBase=http://inpniscvfemp29.nps.doi.net/Geocortex/Essentials/REST/sites/GAAR_Park_Atlas/viewers/GAAR1/virtualdirectory/Resources/Config/Default">Gates of the Arctic National Park and Preserve</a></li>
+				<li><a href="http://inpniscvfemp29.nps.doi.net/Html5Viewer/Index.html?configBase=http://inpniscvfemp29.nps.doi.net/Geocortex/Essentials/REST/sites/GLBA_Park_Atlas/viewers/GLBA1/virtualdirectory/Resources/Config/Default">Glacier Bay National Park and Preserve</a></li>
+				<li><a href="http://inpniscvfemp29.nps.doi.net/Html5Viewer/Index.html?configBase=http://inpniscvfemp29.nps.doi.net/Geocortex/Essentials/REST/sites/KATM__ALAG_Park_Atlas/viewers/KATM-ALAG1/virtualdirectory/Resources/Config/Default">Katmai NPP/Alagnak Wild River</a></li>
+				<li><a href="http://inpniscvfemp29.nps.doi.net/Html5Viewer/Index.html?configBase=http://inpniscvfemp29.nps.doi.net/Geocortex/Essentials/REST/sites/KEFJ_Park_Atlas/viewers/KEFJ1/virtualdirectory/Resources/Config/Default">Kenai Fjords National Park</a></li>
+				<li><a href="http://inpniscvfemp29.nps.doi.net/Html5Viewer/Index.html?configBase=http://inpniscvfemp29.nps.doi.net/Geocortex/Essentials/REST/sites/LACL_Park_Atlas/viewers/LACL1/virtualdirectory/Resources/Config/Default">Lake Clark National Park and Preserve</a></li>
+				<li><a href="http://inpniscvfemp29.nps.doi.net/Html5Viewer/Index.html?configBase=http://inpniscvfemp29.nps.doi.net/Geocortex/Essentials/REST/sites/WRST_Park_Atlas/viewers/WRST1/virtualdirectory/Resources/Config/Default">Wrangell-St. Elias National Park and Preserve</a></li>
+				<li><a href="http://inpniscvfemp29.nps.doi.net/Html5Viewer/Index.html?configBase=http://inpniscvfemp29.nps.doi.net/Geocortex/Essentials/REST/sites/YUCH_Park_Atlas/viewers/YUCH1/virtualdirectory/Resources/Config/Default">Yukon-Charley Rivers National Preserve</a></li>
+			</ul>
+		</li>
+		<li>Other Geocortex Maps:	
+			<ul>
+				<li><a href="http://inpniscvfemp29.nps.doi.net/Html5Viewer/Index.html?configBase=http://inpniscvfemp29.nps.doi.net/Geocortex/Essentials/REST/sites/Land_Status/viewers/NPSAKLandStatus1/virtualdirectory/Resources/Config/Default">Land Status</a></li>
+				<li><a href="http://inpniscvfemp29.nps.doi.net/Html5Viewer/Index.html?configBase=http://inpniscvfemp29.nps.doi.net/Geocortex/Essentials/REST/sites/NHD_Updates/viewers/NHDUpdates1/virtualdirectory/Resources/Config/Default">NHD Updates for USGS Topo Production</a></li>
+			</ul>
+		</li>
+  </ul>
+  <br/>
+  
+	<h3>Browse Map Services:</h3>
+	<ul>
+		<li><a href="http://akrgis.nps.gov:6080/arcgis/rest/services">AKRO (Web application services)</a></li>
+		<li><a href="http://inpakrovmais:6080/arcgis/rest/services">AKRO (X-drive services)</a></li>
+		<li><a href="http://alaskacenters.nps.gov:6080/arcgis/rest/services">APLIC (alaskacenters)</a></li>
+		<li><a href="http://denagis.nps.gov:6080/arcgis/rest/services">DENA</a></li>
+		<li><a href="http://glbagis.nps.gov:6080/arcgis/rest/services">GLBA</a></li>
+		<li><a href="http://wrstgis.nps.gov:6080/arcgis/rest/services">WRST</a></li>
+	</ul>
+	<br/>
+	<h3>Administrative Tools:</h3>
+	<ul>
+		<li> Manage ArcGIS Map Services
+		<ul>
+			<li><a href="http://akrgis.nps.gov:6080/arcgis/manager">AKRO</a></li>
+			<li><a href="http://alaskacenters.nps.gov:6080/arcgis/manager">Alaska Centers (APLIC)</a></li>
+			<li><a href="http://denagis.nps.gov:6080/arcgis/manager">DENA</a></li>
+			<li><a href="http://glbagis.nps.gov:6080/arcgis/manager">GLBA</a></li>
+			<li><a href="http://wrstgis.nps.gov:6080/arcgis/manager">WRST</a></li>
+		</ul>
+		</li>
+		<li> Manage Web Sites built with GeoCortex
+    <p>Login with your windows login name (ie. resarwas) and password.</p>
+		<ul>
+			<li><a href="http://gis.nps.gov/Geocortex/Essentials/DSC/RestManager/">Park Atlas</a></li>			
+			<li><a href="http://akrgis.nps.gov/Geocortex/Essentials/RestManager/">Alaska Region</a></li>			
+			<li><a href="http://akrgis.nps.gov/Geocortex/Essentials/DENA/RestManager/">DENA</a></li>			
+			<li><a href="http://akrgis.nps.gov/Geocortex/Essentials/GLBA/RestManager/">GLBA</a></li>			
+			<li><a href="http://akrgis.nps.gov/Geocortex/Essentials/WRST/RestManager/">WRST</a></li>						
+		</ul>
+		</li>
+		<li> Other Tools
+		<ul>
+			<li><a href="http://akrgis.nps.gov/builder">Create a Silverlight Map</a></li>
+		</ul>
+		</li>
+	</ul>
+	<br/>
+	<h3>Web Maps (deprecated - requires silverlight viewer):</h3>
+	<ul>
+		<li>Park Atlas Maps:
+			<ul>
+				<li><a href="http://inpniscvfemp20.nps.doi.net/Viewer/?Viewer=BELA">Bering Land Bridge National Preserve</a></li>
+				<li><a href="http://inpniscvfemp20.nps.doi.net/Viewer/?Viewer=DENA">Denali National Park and Preserve</a></li>
+				<li><a href="http://inpniscvfemp20.nps.doi.net/Viewer/?Viewer=GAAR">Gates of the Arctic National Park and Preserve</a></li>
+				<li><a href="http://inpniscvfemp20.nps.doi.net/Viewer/?Viewer=GLBA">Glacier Bay National Park and Preserve</a></li>
+				<li><a href="http://inpniscvfemp20.nps.doi.net/Viewer/?Viewer=KATM-ALAG">Katmai NPP/Alagnak Wild River</a></li>
+				<li><a href="http://inpniscvfemp20.nps.doi.net/Viewer/?Viewer=KEFJ">Kenai Fjords National Park</a></li>
+				<li><a href="http://inpniscvfemp20.nps.doi.net/Viewer/?Viewer=LACL">Lake Clark National Park and Preserve</a></li>
+				<li><a href="http://inpniscvfemp20.nps.doi.net/Viewer/?Viewer=WRST">Wrangell-St. Elias National Park and Preserve</a></li>
+				<li><a href="http://inpniscvfemp20.nps.doi.net/Viewer/?Viewer=YUCH">Yukon-Charley Rivers National Preserve</a></li>
+				<li><a href="http://inpniscvfemp20.nps.doi.net/Viewer">Choose a Park Atlas...</a></li>
+			</ul>
+		</li>
+		<br/>
+		<li>Selected Web Maps:	
+			<ul>
+				<li><a href="http://alaskacenters.nps.gov/se">APLIC Site Explorer (requires flash)</a></li>
+				<li><a href="http://glbagis.nps.gov/Viewer/?Viewer=Coastwalker">Glacier Bay NPP Coastwalker</a></li>
+				<li><a href="http://akrgis.nps.gov/viewer/?Viewer=AmblerRoad">Ambler Road</a></li>
+				<li><a href="http://akrgis.nps.gov/Viewer/?Viewer=NPSAKLandStatus">Land Status</a></li>
+				<li><a href="http://akrgis.nps.gov/Viewer/?Viewer=NHDUpdates">NHD Updates for USGS Topo Production</a></li>
+			</ul>
+		</li>
+		<br/>
+		<li>Choose Other Maps:
+			<ul>	
+				<li><a href="http://akrgis.nps.gov/viewer">Alaska Region</a></li>
+				<li><a href="http://denagis.nps.gov/viewer">Denali NPP</a></li>
+				<li><a href="http://glbagis.nps.gov/viewer">Glacier Bay NPP</a></li>
+				<li><a href="http://wrstgis.nps.gov/viewer">Wrangell-St. Elias NPP</a></li>
+			</ul>
+		</li>
+	</ul>
+	<br/>
+  <h3>Help:</h3>
+	<ul>
+		<li>Geocortex Essentials 4.2 (Site builder)
+			<ul>
+			<li><a href="/GeocortexDocs/Essentials/4.2/Administrator Guide.pdf">Administrator Guide (pdf)</a></li>
+			<li><a href="/GeocortexDocs/Essentials/4.2/Installation Guide.pdf">Installation Guide (pdf)</a></li>
+			<li><a href="/GeocortexDocs/Essentials/4.2/Release Notes.pdf">Release Notes (pdf)</a></li>
+			</ul>
+		</li>
+		<li>Latest Geocortex Silverlight Viewer
+			<ul>
+			<li><a href="/GeocortexDocs/SilverlightViewer/Administrator and Developer Guide.pdf">Administrator and Developer Guide (pdf)</a></li>
+			<li><a href="/GeocortexDocs/SilverlightViewer/Advanced Editing Extension.pdf">Advanced Editing Extension (pdf)</a></li>
+			<li><a href="/GeocortexDocs/SilverlightViewer/Installation Guide.pdf">Installation Guide (pdf)</a></li>
+			<li><a href="/GeocortexDocs/SilverlightViewer/Release Notes.pdf">Release Notes (pdf)</a></li>
+			</ul>
+		</li>
+		<li>Latest Geocortex HTML Viewer
+			<ul>
+			<li><a href="/GeocortexDocs/HtmlViewer/Administrator and Developer Guide.pdf">Administrator and Developer Guide (pdf)</a></li>
+			<li><a href="/GeocortexDocs/HtmlViewer/Installation Guide.pdf">Installation Guide (pdf)</a></li>
+			<li><a href="/GeocortexDocs/HtmlViewer/Release Notes.pdf">Release Notes (pdf)</a></li>
+			</ul>
+		</li>
+		<li><a href="http://resources.arcgis.com/en/help/main/10.1/index.html#//0154000002np000000">ArcGIS 10.1 for Server</a></li>
+		<li><a href="http://resources.arcgis.com/en/communities/silverlight-viewer/">ArcGIS Viewer for Silverlight</a> - Build a Silverlight based
+		map application.  This can be done through the <a href="http://inpniscvfemp29/builder">app builder</a> in a browser.
+		The builder essentially copies a template application and provides a GUI for editing configuration files, all
+		of which can also be done by hand.</li>
+		<li><a href="http://resources.arcgis.com/en/communities/flex-viewer/index.html">ArcGIS Viewer for Flex</a> - Build an Adobe Flex based
+		map application without code.  You must log into the server to run the flex builder application to create the web map.
+		The builder essentially copies a template application and provides a GUI for editing configuration files, all
+		of which can also be done by hand.</li>
+		<li><a href="http://resources.arcgis.com/en/communities/flex-api/">ArcGIS API for Flex</a> - How to write your own custom Adobe Flex
+		based web map and widgets without using the the pre-built viewer.  Requires access to Flex development tools from
+		<a href="http://www.adobe.com/products/flex.html">Adobe</a> or <a href="http://flex.apache.org/">Apache</a>.</li>
+		<li><a href="https://developers.arcgis.com/en/javascript/">ArcGIS API for Javascript</a> - Build custom web maps that
+		will run in any browser without a plugin (Flex and Silverlight do not work on iPhones and iPads).  <a href="http://ArcGIS.com">ArcGIS.com</a> can be
+		used to build a simple a javascript based map without writing any code.  That map can then be downloaded and deployed
+		and customized on a local server.</li>			
+	</ul>
+    </div>
+    <div id="footer">
+	Questions? Contact Regan Sarwas at <a href="mailto:regan_sarwas@nps.gov">regan_sarwas@nps.gov</a>.
+    </div>	
+</body>
+</html>
